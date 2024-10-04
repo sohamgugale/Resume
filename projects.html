@@ -1,0 +1,136 @@
+<!-- projects.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Soham Gugale</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Soham Gugale</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="container my-5">
+        <h2 class="mb-4">Academic & Professional Projects</h2>
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="images/project1.jpg" class="card-img-top" alt="Olympic Data Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">Olympic Data Analysis</h5>
+                        <p class="card-text">Developed an interactive data visualization tool using Python and Streamlit.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="images/project2.jpg" class="card-img-top" alt="Stock Price Prediction">
+                    <div class="card-body">
+                        <h5 class="card-title">Stock Price Prediction Using Neural Networks</h5>
+                        <p class="card-text">Implemented neural network models for predicting stock prices with high accuracy.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more projects similarly -->
+        </div>
+    </section>
+
+    <!-- Project 1 Modal -->
+    <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="project1ModalLabel">Olympic Data Analysis</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="images/project1.jpg" class="img-fluid mb-3" alt="Olympic Data Analysis">
+            <p><strong>Technologies Used:</strong> Python, Streamlit, Pandas, Plotly, Matplotlib, Seaborn</p>
+            <p>
+                Developed an interactive data visualization tool using Streamlit, Pandas, Plotly, Matplotlib, and Seaborn.
+                Created dynamic charts and tables for medal tallies, overall statistics, and country-specific performance.
+                Developed a Streamlit interface with easy navigation and interactive data exploration options.
+            </p>
+            <a href="https://github.com/sohamgugale/Olympic-Data-Analysis" target="_blank" class="btn btn-secondary">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 Modal -->
+    <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="project2ModalLabel">Stock Price Prediction Using Neural Networks</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="images/project2.jpg" class="img-fluid mb-3" alt="Stock Price Prediction">
+            <p><strong>Technologies Used:</strong> Python, TensorFlow, Keras, Scikit-learn</p>
+            <p>
+                Developed and implemented neural network models (Classification, Regression, RNN, LSTM) for stock price prediction,
+                evaluating performance based on accuracy, loss metrics, and computational efficiency.
+                Designed a classification model for binary stock price movement prediction and optimized regression and RNN models for numerical forecasting,
+                utilizing LSTM networks to capture long-term dependencies in time-series data.
+            </p>
+            <a href="https://github.com/sohamgugale/Stock-Price-Prediction" target="_blank" class="btn btn-secondary">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more modals for additional projects -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2024 Soham Sanjay Gugale. All rights reserved.
+    </footer>
+</body>
+</html>

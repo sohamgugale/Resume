@@ -1,0 +1,85 @@
+/* css/styles.css */
+
+/* Custom Styles */
+
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navigation Bar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Header */
+header {
+    background: #ffffff;
+    color: #333333;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header img {
+    border: 5px solid #ffffff;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #666666;
+}
+
+header .btn {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Project Cards */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Accordion Headers */
+.accordion-button {
+    background-color: #343a40;
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #495057;
+}
+
+/* Contact Form */
+#contactForm {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        padding: 40px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
